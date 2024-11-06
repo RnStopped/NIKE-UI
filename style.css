@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -9,10 +12,69 @@ body {
   height: 100vh;
 }
 
+/* HEADER TOPO DA PAGINA */
+
 .header-top {
   width: 100vw;
   height: 36px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.img-jordan {
+  width: 24px;
+  height: 24px;
+  padding-left: 48px;
+}
+
+.header-top-center {
+  background-color: white;
+  display: flex;
+  width: 146.859px;
+  height: 26px;
+  padding: 5px 9.8px 5px 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  border-radius: 5px;
+}
+
+.header-top-center a {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.header-top-end {
+  display: flex;
+  align-items: center;
+  margin-right: 48px;
+}
+
+.header-top-end a {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.header-top-end p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  margin-right: 12px;
+}
+
+/* HEADER NAVEGADOR CENTRAL */
 
 header {
   width: 100vw;
@@ -22,14 +84,22 @@ header {
   justify-content: space-between;
 }
 
-.nike-logo{padding: 38px;}
-
-.header-nav {
-  display: flex;
-  align-items: center;
+.nike-logo {
+  padding-left: 38px;
 }
 
-nav a{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-grow: 1;
+}
+
+
+
+.header-a{margin-left: 177px; }
+
+nav a {
   padding: 11px;
   color: #111;
   text-align: center;
@@ -37,10 +107,14 @@ nav a{
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
-  text-decoration: none;}
+  text-decoration: none;
+  cursor: pointer;
+}
 
-.nike-logo img{width: 78.47px;
-  height: 78.47px;}
+.nike-logo img {
+  width: 78.47px;
+  height: 78.47px;
+}
 
 .main-buttons {
   display: flex;
@@ -48,35 +122,42 @@ nav a{
   justify-content: flex-end;
 }
 
-.input-pesquisar{
+
+
+.input-pesquisar {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  
   width: 180px;
   height: 40px;
   padding: 11px 48px;
   border: none;
   border-radius: 100px;
-  background-color:#F5F5F5; 
+  background-color: #f5f5f5;
   margin-right: 20px;
+  margin-left: auto;
 }
 
-.input-pesquisar2 {  display: flex;
+.input-pesquisar2 {
+  display: flex;
   align-items: center;
   justify-content: flex-start;
-margin-left: -30px;}
-
-#placeholder-text::placeholder{
-  color: #CCC;;
+  margin-left: -30px;
+  background-color: #f5f5f5;
 }
 
-.main-buttons input{
-margin-left: 10px;
-width: 100px;
-height: 35px;
+.input-pesquisar2 input{color: #f5f5f5;}
+
+#placeholder-text{width: 100px;
 border: none;
-background-color:#F5F5F5;
 }
+
+#placeholder-text::placeholder {
+  color: #CCCCCC;
+  background-color: #F5F5F5;
+ 
+}
+
 
 .main-buttons img {
   width: 24px;
@@ -86,4 +167,99 @@ background-color:#F5F5F5;
   margin-right: 12px;
 }
 
-#sacola{margin-right: 38px;}
+#sacola {
+  margin-right: 38px;
+}
+
+/* HEADER DOWN - ABAIXO DO CENTRAL */
+
+.header-down {
+  width: 100vw;
+  height: 44px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-down h1 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.header-down p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header-down a{
+  color: #111;
+  font-weight: 500;
+}
+
+/* MAIN */
+
+.poster {
+  background-color: #a8a6a6;
+  height: 70vh;
+  width: 100vw;
+  color: white;
+  display: flexbox;
+  
+}
+
+.poster img{
+  position: absolute;
+  margin-top: 60px;
+  height: 400px;
+  margin-left: 30px;
+  
+}
+
+.poster h1{
+text-align: center;
+color: white;
+font-size: 100px;
+text-transform: uppercase;
+padding-top: 70px ;
+}
+
+.texto-principal{
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 500px;
+  margin-right: 300px;
+  
+  
+}
+
+
+.legenda{
+  text-align: justify;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 500px;
+  margin-right: 300px;
+}
+
+
+
+
+.poster button{
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-right: 300px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: black;
+  width: 150px;
+  height: 50px;
+}
