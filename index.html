@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Nike</title>
-  </head>
-  <body>
-    <!-- HEADER TOP -->
-    <div class="header-top">
-      <div class="img-jordan">
-        <img src="./assets/JordanLogo.svg" />
-      </div>
 
-       <div class="header-top-center"><a href=""> Pular para o conteúdo principal </a></div> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <script src="script.js" type="text/javascript"></script>
+  <title>Nike</title>
+</head>
 
-      <div class="header-top-end">
-        <a href=""> Procurar uma loja</a>
-        <p>|</p>
-        <a href="">Ajuda</a>
-        <p>|</p>
-        <a href="">Aderir</a>
-        <p>|</p>
-        <a href="">Iniciar sessão</a>
-      </div>
+<body>
+  <!-- HEADER TOP -->
+  <div class="header-top">
+    <div class="img-jordan">
+      <img src="./assets/JordanLogo.svg" />
     </div>
 
-    <!-- 2° HEADER NAV -->
-    <header>
-      <div class="nike-logo">
-        <img src="./assets/NikeLogo.svg" alt="" />
-      </div>
 
-      <nav class="header-nav">
+    <div class="header-top-end">
+      <a href=""> Acessibilidade</a>
+      <p>|</p>
+      <a href="">Nike Journal</a>
+      <p>|</p>
+      <a href="">Ajuda</a>
+      <p>|</p>
+      <a href="">Iniciar sessão</a>
+    </div>
+  </div>
 
-        <div class="header-a">
-        <a href="">Novo e em destaque</a>
+  <!-- 2° HEADER NAV -->
+  <header>
+    <div class="nike-logo">
+      <img src="./assets/NikeLogo.svg" alt="" />
+    </div>
+
+    <nav class="header-nav">
+
+      <div class="header-a">
+        <a href="">Acessibilidade</a>
+        <a href="">Lançamentos</a>
+        <a href="">Ofertas</a>
         <a href="">Masculino</a>
         <a href="">Feminino</a>
-        <a href="">Infatil</a>
-        <a href="">Ofertas</a>
+        <a href="">Infantil</a>
         <a href="">SNKRS</a>
       </div>
 
-      
-      </nav>
 
-      <div class="main-buttons">
-       
-        <div class="input-pesquisar">
-          <div class="input-pesquisar2">
-            <img src="./assets/Lupa.svg" alt="" />
-            <input
-              id="placeholder-text"
-              placeholder="pesquisar"
-              type="text"
-              name="pesquisar:"
-            />
-          </div>
+    </nav>
+
+    <div class="main-buttons">
+
+      <div class="input-pesquisar">
+        <div class="input-pesquisar2">
+          <img src="./assets/Lupa.svg" alt="" />
+          <input id="placeholder-text" placeholder="pesquisar" type="text" name="pesquisar:" />
+        </div>
+      </div>
+
+      <a href="">
+        <img src="./assets/Heart.svg" />
+      </a>
+
+      <a href="">
+        <img id="sacola" src="./assets/Sacola.svg" alt="" />
+      </a>
+    </div>
+  </header>
+
+  <div class="header-down">
+    <div class="carrossel">
+
+    <button id="prev-button"><img src="./assets/left-arrow-svgrepo-com (1).svg" alt="">  </button>
+
+      <div class="container-images">
+      
+        <div class="sliders">
+          <img src="./assets/icon_release_shoes_b57187fa62.png" alt="">
+          <p> <b> TÊNIS DE CORRIDA</b> Encontre o seu tênis ideal. <a href=""> Saiba Mais</a></p>
         </div>
 
-        <a href="">
-          <img src="./assets/Heart.svg" />
-        </a>
+        <div class="sliders">
+          <img src="./assets/gift_card_99aa6b2828.png" alt="">
+          <p> <b> CARTÃO PRESENTE</b> para presentes de última hora. <a href="">Saiba Mais</a></p>
+        </div>
 
-        <a href="">
-          <img id="sacola" src="./assets/Sacola.svg" alt="" />
-        </a>
+        <div class="sliders">
+          <img src="./assets/pitch_bar_0acc786a06.png" alt="">
+          <p> <b> Black friday</b> confira o calendario e fique por dentro das <a href="">Ofertas</a></p>
+        </div>
+
+        <div class="sliders">
+          <img src="./assets/shopping_cart_cf2546b6a3.png" alt="">
+          <p> <b> Flash Ofertas</b> As Ofertas mudam diariamente <a href="">Veja aqui</a></p>
+        </div>
+
+
       </div>
-    </header>
-
-    <div class="header-down">
-      <h4>Hello Nike App</h4>
-      <p>Dowload the app to acess everything. <a href="">Get Your Great</a> </p>
-     
+      <button id="next-button"><img src="./assets/right-arrow-svgrepo-com.svg" alt=""></button>
     </div>
 
-       <!-- MAIN -->
-       <main>
-        <div class="video-main">
-  <video controls src="./assets/main.mp4" height="100%"></video>
-          </div>
+
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <div class="video-main">
+      <video controls src="./assets/main.mp4" height="100%"></video>
+    </div>
 
 
-    </main>
+  </main>
 
+</body>
 
-    </main>
-  </body>
 </html>

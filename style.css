@@ -29,27 +29,6 @@ body {
   padding-left: 48px;
 }
 
-.header-top-center {
-  background-color: white;
-  display: flex;
-  width: 146.859px;
-  height: 26px;
-  padding: 5px 9.8px 5px 10px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
-  border-radius: 5px;
-}
-
-.header-top-center a {
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
 .header-top-end {
   display: flex;
   align-items: center;
@@ -94,12 +73,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-flex-grow: 1;
+  flex-grow: 1;
 }
 
-
-
-.header-a{margin-left: 177px; }
+.header-a {
+  margin-left: 177px;
+}
 
 nav a {
   padding: 11px;
@@ -124,12 +103,10 @@ nav a {
   justify-content: flex-end;
 }
 
-
-
 .input-pesquisar {
   display: flex;
   align-items: center;
-  
+
   width: 180px;
   height: 40px;
   padding: 11px 48px;
@@ -148,18 +125,19 @@ nav a {
   background-color: #f5f5f5;
 }
 
-.input-pesquisar2 input{color: #f5f5f5;}
+.input-pesquisar2 input {
+  color: #f5f5f5;
+}
 
-#placeholder-text{width: 100px;
-border: none;
+#placeholder-text {
+  width: 100px;
+  border: none;
 }
 
 #placeholder-text::placeholder {
-  color: #CCCCCC;
-  background-color: #F5F5F5;
- 
+  color: #cccccc;
+  background-color: #f5f5f5;
 }
-
 
 .main-buttons img {
   width: 24px;
@@ -197,18 +175,58 @@ border: none;
   line-height: 24px;
 }
 
-.header-down a{
+.header-down a {
   color: #111;
   font-weight: 500;
 }
 
 /* MAIN */
 
-.video-main{
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.video-main {
   margin: 80px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 600px;
+}
 
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.sliders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliders img {
+  margin-right: 6px;
+  height: 26px;
+}
+
+#prev-button,
+#next-button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+  width: 100%;
 }
